@@ -1962,7 +1962,7 @@
 			attributes = {
 				LastUpgradeCheck = 1320;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacAranym-Latest" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacAranym-Ventura-X14-m1" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -2759,7 +2759,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMPILE_DEFS_BASE = "$(inherited) DIRECT_ADDRESSING FPU_UAE";
-				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-nfosmesa";
+				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet";
 				CONFIGURE_OPTIONS_TARGET = "--enable-fpe=uae --disable-fullmmu";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2844,10 +2844,7 @@
 					external/jpeg/include,
 				);
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks/";
-				LIBRARY_SEARCH_PATHS = (
-					external/lib,
-					external/jpeg/lib,
-				);
+				LIBRARY_SEARCH_PATHS = external/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_LDFLAGS = (
 					"-Lexternal/lib",
@@ -2935,7 +2932,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMPILE_DEFS_BASE = "$(inherited) DIRECT_ADDRESSING FPU_MPFR";
-				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-full-debug --enable-fullhistory --enable-nfosmesa";
+				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-full-debug --enable-fullhistory";
 				CONFIGURE_OPTIONS_TARGET = "--enable-fpe=mpfr --enable-fullmmu --enable-lilo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2960,7 +2957,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMPILE_DEFS_BASE = "$(inherited) DIRECT_ADDRESSING FPU_MPFR";
-				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-nfosmesa";
+				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet";
 				CONFIGURE_OPTIONS_TARGET = "--enable-fpe=mpfr --enable-fullmmu --enable-lilo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2984,6 +2981,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				LIBRARY_SEARCH_PATHS = (
+					external/lib,
+					external/jpeg/lib,
+				);
 				PRODUCT_NAME = Packaging;
 			};
 			name = Debug;
@@ -2992,6 +2993,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				LIBRARY_SEARCH_PATHS = (
+					external/lib,
+					external/jpeg/lib,
+				);
 				PRODUCT_NAME = Packaging;
 			};
 			name = Release;
@@ -3001,7 +3006,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMPILE_DEFS_BASE = "$(inherited) DIRECT_ADDRESSING FPU_UAE";
-				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-full-debug --enable-fullhistory --enable-nfosmesa";
+				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-full-debug --enable-fullhistory";
 				CONFIGURE_OPTIONS_TARGET = "--enable-fpe=uae --enable-fullmmu --enable-lilo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3009,6 +3014,10 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "$(COMPILE_DEFS_$(arch))";
 				INFOPLIST_FILE = "../../gui-osx/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					external/lib,
+					external/jpeg/lib,
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lz",
@@ -3023,7 +3032,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMPILE_DEFS_BASE = "$(inherited) DIRECT_ADDRESSING FPU_UAE";
-				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-nfosmesa";
+				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet";
 				CONFIGURE_OPTIONS_TARGET = "--enable-fpe=uae --enable-fullmmu --enable-lilo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3031,6 +3040,10 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "$(COMPILE_DEFS_$(arch))";
 				INFOPLIST_FILE = "../../gui-osx/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					external/lib,
+					external/jpeg/lib,
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lz",
@@ -3045,7 +3058,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMPILE_DEFS_BASE = "$(inherited) DIRECT_ADDRESSING FPU_UAE";
-				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-full-debug --enable-fullhistory --enable-nfosmesa";
+				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-full-debug --enable-fullhistory";
 				CONFIGURE_OPTIONS_TARGET = "--enable-fpe=uae --disable-fullmmu";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3131,10 +3144,7 @@
 					external/jpeg/include,
 				);
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks/";
-				LIBRARY_SEARCH_PATHS = (
-					external/lib,
-					external/jpeg/lib,
-				);
+				LIBRARY_SEARCH_PATHS = external/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -3161,17 +3171,31 @@
 		B439AC980C5B2FD00046EFC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMPILE_DEFS_BASE = "$(inherited) FPU_IEEE FIXED_ADDRESSING FMEMORY=0x51000000 USE_JIT=1 USE_JIT_FPU=1";
-				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-full-debug --enable-fullhistory --enable-nfosmesa";
+				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-full-debug --enable-fullhistory";
 				CONFIGURE_OPTIONS_TARGET = "--enable-fpe=ieee --enable-jit-compiler --enable-jit-fpu";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "$(COMPILE_DEFS_$(arch))";
+				HEADER_SEARCH_PATHS = (
+					SDL2.framework/Headers,
+					external/include,
+					external/jpeg/include,
+				);
 				INFOPLIST_FILE = "../../gui-osx/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					external/lib,
+					external/jpeg/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-Lexternal/lib",
+					"-ljpeg",
+					"-Lexternal/jpeg/lib",
+				);
 				"OTHER_LDFLAGS[arch=x86_64]" = (
 					"$(inherited)",
 					"-pagezero_size",
@@ -3186,17 +3210,31 @@
 		B439AC990C5B2FD00046EFC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMPILE_DEFS_BASE = "$(inherited) FPU_IEEE FIXED_ADDRESSING FMEMORY=0x51000000 USE_JIT=1 USE_JIT_FPU=1";
-				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet --enable-nfosmesa";
+				CONFIGURE_OPTIONS_BASE = "--with-classicconfig --enable-ctrlkey=ctrl --enable-bpf-ethernet";
 				CONFIGURE_OPTIONS_TARGET = "--enable-fpe=ieee --enable-jit-compiler --enable-jit-fpu";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "$(COMPILE_DEFS_$(arch))";
+				HEADER_SEARCH_PATHS = (
+					SDL2.framework/Headers,
+					external/include,
+					external/jpeg/include,
+				);
 				INFOPLIST_FILE = "../../gui-osx/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					external/lib,
+					external/jpeg/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-Lexternal/lib",
+					"-ljpeg",
+					"-Lexternal/jpeg/lib",
+				);
 				"OTHER_LDFLAGS[arch=x86_64]" = (
 					"$(inherited)",
 					"-pagezero_size",
@@ -3265,7 +3303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacAranym-Latest" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacAranym-Ventura-X14-m1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17E8B5B60ABC88C600BBFD59 /* Debug */,

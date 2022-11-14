@@ -94,7 +94,7 @@ fi
 # set up links to external dependencies (mpfr, gmp, jpeg)
 # from either MacPorts or Homebrew
 #
-if test ! -d "$SOURCE_ROOT/external"; then
+if test ! -d "$SOURCE_ROOT/external/include"; then
    mkdir "$SOURCE_ROOT/external"
    if test -f /opt/local/include/gmp.h; then
       ln -s /opt/local/include "$SOURCE_ROOT/external/include"
@@ -104,6 +104,16 @@ if test ! -d "$SOURCE_ROOT/external"; then
       ln -s /usr/local/lib "$SOURCE_ROOT/external/lib"
    else
       echo "warning: gmp.h not found; install it using MacPorts" >&2
+   fi
+fi
+if test ! -d "$SOURCE_ROOT/external/jpeg/include"; then
+   mkdir -p "$SOURCE_ROOT/external/jpeg"
+   if test -f /opt/local/libexec/jpeg/include/jpeglib.h; then
+      ln -s /opt/local/libexec/jpeg/include "$SOURCE_ROOT/external/jpeg/include"
+      ln -s /opt/local/libexec/jpeg/lib "$SOURCE_ROOT/external/jpeg/lib"
+   else
+      ln -s "$SOURCE_ROOT/external/include" "$SOURCE_ROOT/external/jpeg/include"
+      ln -s "$SOURCE_ROOT/external/lib" "$SOURCE_ROOT/external/jpeg/lib"
    fi
 fi
 
